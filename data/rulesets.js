@@ -845,6 +845,20 @@ let BattleFormats = {
 		desc: "Allows Gen 1 pokemon to have moves from their Gen 2 learnsets",
 		// Implemented in team-validator.js
 	},
+	brittlerule: {
+		effectType: 'Rule',
+		name: 'Brittle Rule',
+		desc: "Rule for Brittle Cup which makes call Pokemons max HP 1",
+		effectType: 'Rule',
+		onStart: function() {
+			for (var nSideItr = 0; nSideItr < this.sides.length; nSideItr++) {
+				for (var nMonItr = 0; nMonItr < this.sides[nSideItr].pokemon.length; nMonItr++) {
+					this.sides[nSideItr].pokemon[nMonItr].hp =
+					this.sides[nSideItr].pokemon[nMonItr].maxhp = 1;
+				}
+			}
+		},
+	},
 };
 
 exports.BattleFormats = BattleFormats;
