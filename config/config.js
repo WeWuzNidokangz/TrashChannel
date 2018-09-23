@@ -207,7 +207,10 @@ exports.tourannouncements = [/* roomids */];
 // appealurl - specify a URL containing information on how users can appeal
 // disciplinary actions on your section. You can also leave this blank, in
 // which case users won't be given any information on how to appeal.
+// enablegithubhook (18/09/23 TrashChannel add) -
+// turn githubhook on or off so it doesn't interfere with services like glitch
 exports.appealurl = '';
+exports.enablegithubhook = false;
 exports.github = {
 	secret: 'f8e22e7685f1a5cf8dfe8a7156026f34ee4c0eb8',
 	port: 3420,

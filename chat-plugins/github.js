@@ -17,7 +17,10 @@ const git = exports.github = require('githubhook')(gitConfig);
 
 if (!Config.github) {
 	return;
-} else if (Config.github === {}) {
+} else if(!Config.enablegithubhook) {
+	return;
+}
+else if (Config.github === {}) {
 	gitConfig.port = 3420;
 	gitConfig.secret = "";
 } else {
