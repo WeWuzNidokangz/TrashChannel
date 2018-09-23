@@ -13,7 +13,8 @@
     "sockjs": "0.3.18",
     "nani": "^1.2.0",
     "uuid": "^2.0.2",
-    "node-serialize": "^0.0.4"
+    "node-serialize": "^0.0.4",
+    "origindb": "^2.6.1"
   },
   "optionalDependencies": {
     "cloud-env": "0.2.2",
